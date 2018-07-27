@@ -1,0 +1,11 @@
+---
+- name: firewall | start and enable firewalld
+  systemd: name=firewalld state=started enabled=yes
+
+- name: firewall | set the dmz zone as defaultk
+  command: firewall-cmd --set-default-zone=dmz
+
+- name: firewall | put the nic interface in the dmz zone (only ssh and icmp inbound allowed)
+  command: firewall-cmd --zone=dmz --add-interface={{ item }}
+  with_items: "{{ DMZ_INTERFACES }}"
+  notify: reload firewalld
