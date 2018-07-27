@@ -12,6 +12,7 @@ DEFAULT_PACKAGES:
   - postfix
   - mailx
   - yum-cron
+  - htop
 DMZ_INTERFACES:
   - enp2s0
 ROOT_ALIAS: lg@lgaggini.net
