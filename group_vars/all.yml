@@ -17,3 +17,22 @@ DMZ_INTERFACES:
   - enp2s0
 ROOT_ALIAS: lg@lgaggini.net
 AUTO_UPDATES_IGNORE: kernel*'
+KVM_PACKAGES:
+  - qemu-kvm
+  - libvirt
+  - libvirt-python
+  - python-lxml
+KVM_STORAGE_POOL:
+  NAME: kvm_storage_pool
+  SOURCE: kvm_storage_pool
+  PATH: /dev/kvm_storage_pool
+KVM_NETWORKS:
+  INTERNAL:
+    ADDRESS: 192.168.0.1
+    NETMASK: 255.255.255.0
+  PRIVATE:
+    ADDRESS: 10.0.0.1
+    NETMASK: 255.255.255.0
+  PUBLIC:
+    ADDRESS: 2a01:4f8:212:5cf::1
+    PREFIX: 64

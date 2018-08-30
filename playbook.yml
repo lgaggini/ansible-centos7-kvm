@@ -16,3 +16,4 @@
     - { role: firewall, tags: ['firewall'] }
     - { role: mail, tags: ['mail'] }
     - { role: yum-cron, tags: ['yum-cron'] }
+    - { role: libvirt-kvm, tags: ['libvirt-kvm'] }

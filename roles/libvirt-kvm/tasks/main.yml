@@ -1,0 +1,4 @@
+---
+- include: packages.yml
+- include: storage.yml
+- include: networks.yml
