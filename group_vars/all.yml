@@ -14,6 +14,7 @@ DEFAULT_PACKAGES:
   - yum-cron
   - htop
   - git
+  - ansible
 DMZ_INTERFACES:
   - enp2s0
 ROOT_ALIAS: lg@lgaggini.net
