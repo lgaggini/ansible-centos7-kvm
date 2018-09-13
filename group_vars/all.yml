@@ -11,6 +11,7 @@ DEFAULT_PACKAGES:
   - vim-enhanced
   - postfix
   - mailx
+  - ssmtp
   - yum-cron
   - htop
   - git
