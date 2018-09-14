@@ -16,7 +16,7 @@ DEFAULT_PACKAGES:
   - htop
   - git
   - ansible
-DMZ_INTERFACES:
+PUBLIC_INTERFACES:
   - enp2s0
 ROOT_ALIAS: lg@lgaggini.net
 AUTO_UPDATES_IGNORE: kernel*'
