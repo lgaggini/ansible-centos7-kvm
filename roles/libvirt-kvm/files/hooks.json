@@ -1,0 +1,17 @@
+{
+    "web": {
+        "interface": "br-private",
+        "private_ip": "10.0.0.2",
+        "port_map": {
+            "tcp": [80, 443]
+        }
+    },
+    "mail": {
+        "interface": "br-private",
+        "private_ip": "10.0.0.3",
+        "port_map": {
+            "tcp": [143, 587, 993]
+        }
+    }
+
+}
