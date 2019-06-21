@@ -6,6 +6,7 @@
   vars_files:
     - group_vars/all.yml
     - group_vars/vault.yml
+    - group_vars/node-exporter.yml
 
   roles:
     - { role: user, tags: ['user'] }
@@ -17,3 +18,4 @@
     - { role: mail, tags: ['mail'] }
     - { role: yum-cron, tags: ['yum-cron'] }
     - { role: libvirt-kvm, tags: ['libvirt-kvm'] }
+    - { role: node-exporter, tags: ['node-exporter'] }
