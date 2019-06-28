@@ -1,0 +1,9 @@
+---
+- name: libvirt-kvm | hook | get libvirt-hook-qemu from git
+  git: repo='https://github.com/saschpe/libvirt-hook-qemu.git' dest=/tmp/libvirt-hook-qemu
+
+- name: libvirt-kvm | hook | deploy custom configuration
+  copy: src=hooks.json dest=/tmp/libvirt-hook-qemu/hooks.json
+
+- name: libvirt-kvm | hook | install libvirt-hook-qemu
+  make: chdir=/tmp/libvirt-hook-qemu target=install
